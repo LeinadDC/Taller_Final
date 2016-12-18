@@ -40,6 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ISIN.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\Parameter Object\DatosDeLaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\Parameter Object\DatosSaldoColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\Parameter Object\DatosSaldoDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\SaldoEnColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\SaldoEnDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoracionISINAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoracionISINColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoracionISINDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoracionISINNoAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ValoraciónDeLosISINDeUnaEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionPorEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ISIN.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnColones.cs" />
@@ -68,6 +80,7 @@
     <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\ValoraciónDeLosISINDeUnaEntidad.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ValoracionesPorEntidad\4 Con Parameter Object\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\3 Con Objetos\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\2 Con Funciones\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\1 Como un procedimiento\Modelo de analisis.cd" />

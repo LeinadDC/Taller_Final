@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConObjetos;
+using ConParameterObject;
 using Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo;
 using Algoritmos.CS.Garantias.Negocio.UnitTests.Valoraciones.ConPolimorfismo.ValoracionPorISIN_Tests;
 
-namespace ConObjetos.Tests
+namespace ConParameterObject.Tests
 {
     public class EscenariosSaldo:EscenariosDeListasEnDolares
     {
