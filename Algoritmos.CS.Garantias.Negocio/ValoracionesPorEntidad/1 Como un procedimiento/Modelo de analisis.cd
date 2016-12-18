@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo.ValoracionPorISIN">
+    <Position X="7.25" Y="1.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQBAIAAIAAAAAAAAIIAEAAAEAAIAAAAAAAA=</HashCode>
+      <FileName>ValoracionesPorISIN\6 Con polimorfismo\ValoracionPorISIN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Algoritmos.CS.Garantias.Negocio.ValoracionesPorEntidad.ValoracionDeLosISINDeUnaEntidad">
+    <Position X="0.5" Y="2" Width="4" />
+    <AssociationLine Name="ValoracionesDeLosISINEnUDESAnotadosEnCuenta" Type="Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo.ValoracionPorISIN">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.2" Y="-0.577" Height="0.16" Width="2.972" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ValoracionesDeLosISINEnUDESNoAnotadosEnCuenta" Type="Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo.ValoracionPorISIN">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.513" Y="-1.025" Height="0.16" Width="3.264" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACACAAgAAQAAAAAAAAAAAAAAAAAAAAggAAAAAAAAAA=</HashCode>
+      <FileName>ValoracionesPorEntidad\ValoraciónDeLosISINDeUnaEntidad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ValoracionesDeLosISINEnColones" />
+      <Property Name="ValoracionesDeLosISINEnDolares" />
+      <Property Name="ValoracionesDeLosISINEnUDESAnotadosEnCuenta" />
+      <Property Name="ValoracionesDeLosISINEnUDESNoAnotadosEnCuenta" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

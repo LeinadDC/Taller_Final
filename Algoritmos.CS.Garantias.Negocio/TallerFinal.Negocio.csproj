@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB0F30A7-510C-4F9F-9853-A4BE2A91FDFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Algoritmos.CS.Garantias.Negocio</RootNamespace>
+    <AssemblyName>Algoritmos.CS.Garantias.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\GeneracionDeUnaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ISIN.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionISINNoAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoraciónDeLosISINDeUnaEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\2 Con Funciones\GeneracionDeUnaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\2 Con Funciones\ISIN.cs" />
+    <Compile Include="ValoracionesPorEntidad\2 Con Funciones\ValoraciónDeLosISINDeUnaEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\GeneracionDeUnaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\ISIN.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\DiasAlVencimiento.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Monedas.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\DatosDeLaValoracionPorISIN.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\DatosDeUnISINAnotadoEnCuentaEnUDES.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\DatosDeUnISINEnDolares.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\DatosDeUnISINNoAnotadoEnCuentaEnUDES.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\DatosDeUnISINEnColones.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\PorcentajeDeCoberturaRevisado.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\ValoracionPorISIN.cs" />
+    <Compile Include="ValoracionesPorISIN\6 Con polimorfismo\ValorDeMercado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\ValoraciónDeLosISINDeUnaEntidad.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ValoracionesPorEntidad\3 Con Objetos\Modelo de analisis.cd" />
+    <None Include="ValoracionesPorEntidad\2 Con Funciones\Modelo de analisis.cd" />
+    <None Include="ValoracionesPorEntidad\1 Como un procedimiento\Modelo de analisis.cd" />
+    <None Include="ValoracionesPorISIN\6 Con polimorfismo\Arbol de objetos.dgml" />
+    <None Include="ValoracionesPorISIN\6 Con polimorfismo\Parameter Objects\Parameter Objects.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
