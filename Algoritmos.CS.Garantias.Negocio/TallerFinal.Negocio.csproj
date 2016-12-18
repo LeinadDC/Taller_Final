@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\GeneracionDeUnaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionPorEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ISIN.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnColones.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionISINAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionISINColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionISINDolares.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionISINNoAnotadoEnCuenta.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoraciónDeLosISINDeUnaEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\2 Con Funciones\GeneracionDeUnaValoracionPorEntidad.cs" />

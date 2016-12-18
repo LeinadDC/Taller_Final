@@ -23,14 +23,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
+            return new ValoracionPorEntidad(
                 listaDeISINEnColones,
                 listaDeISINEnDolares,
                 listaDeISINEnUDESAnotadosEnCuenta,
                 listaDeISINEnUDESNoAnotadosEnCuenta,
                 fechaActual,
                 tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+                tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
         protected List<ValoracionPorISIN> UnaValoracionEnColones()
@@ -62,14 +62,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
+            return new ValoracionPorEntidad(
                 listaDeISINEnColones,
                 listaDeISINEnDolares,
                 listaDeISINEnUDESAnotadosEnCuenta,
                 listaDeISINEnUDESNoAnotadosEnCuenta,
                 fechaActual,
                 tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+                tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
         protected List<ValoracionPorISIN> DosValoracionesEnColones()
@@ -111,14 +111,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
+            return new ValoracionPorEntidad(
                 listaDeISINEnColones,
                 listaDeISINEnDolares,
                 listaDeISINEnUDESAnotadosEnCuenta,
                 listaDeISINEnUDESNoAnotadosEnCuenta,
                 fechaActual,
                 tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+                tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
     }

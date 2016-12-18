@@ -96,6 +96,10 @@
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnColones\EscenariosSaldo.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnColones\SaldoComoNumero_Tests.cs" />
     <Compile Include="ValoracionesPorEntidad\3 Con Objetos\SaldoEnDolares\SaldoDolaresComoNumero_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionesDolares\ComoLista_Dolares_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionesUDESAnotados\ComoLista_UDESAnotados_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValoracionUDESNoAnotados\ComoLista_NoAnotado_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\3 Con Objetos\ValorcionesColones\ComoLista_Colones_Tests.cs" />
     <Compile Include="ValoracionesPorISIN\DiasAlVencimiento\ComoNumero_Tests.cs" />
     <Compile Include="ValoracionesPorISIN\PorcentajeDeCoberturaRevisado\ComoNumero_Tests.cs" />
     <Compile Include="ValoracionesPorISIN\ValoracionPorISIN\AporteDeGarantia_Tests.cs" />

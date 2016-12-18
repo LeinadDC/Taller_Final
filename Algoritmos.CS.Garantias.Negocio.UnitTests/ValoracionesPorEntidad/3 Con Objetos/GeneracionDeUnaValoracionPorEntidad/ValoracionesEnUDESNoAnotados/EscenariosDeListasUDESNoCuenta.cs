@@ -23,14 +23,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
-                listaDeISINEnColones,
-                listaDeISINEnDolares,
-                listaDeISINEnUDESAnotadosEnCuenta,
-                listaDeISINEnUDESNoAnotadosEnCuenta,
-                fechaActual,
-                tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+            return new ValoracionPorEntidad(
+                    listaDeISINEnColones,
+                    listaDeISINEnDolares,
+                    listaDeISINEnUDESAnotadosEnCuenta,
+                    listaDeISINEnUDESNoAnotadosEnCuenta,
+                    fechaActual,
+                    tipoDeCambioDeUDESDeAyer,
+                    tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
         protected List<ValoracionPorISIN> UnaValoracionEnUDESNoAnotadosEnCuenta()
@@ -62,14 +62,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
-                listaDeISINEnColones,
-                listaDeISINEnDolares,
-                listaDeISINEnUDESAnotadosEnCuenta,
-                listaDeISINEnUDESNoAnotadosEnCuenta,
-                fechaActual,
-                tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+            return new ValoracionPorEntidad(
+                    listaDeISINEnColones,
+                    listaDeISINEnDolares,
+                    listaDeISINEnUDESAnotadosEnCuenta,
+                    listaDeISINEnUDESNoAnotadosEnCuenta,
+                    fechaActual,
+                    tipoDeCambioDeUDESDeAyer,
+                    tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
         protected List<ValoracionPorISIN> DosValoracionesEnUDESNoAnotadosEnCuenta()
@@ -111,14 +111,14 @@ namespace ConObjetos.Tests
             decimal tipoDeCambioDeUDESDeAyer = 745;
             decimal tipoDeCambioDeUDESDeHoy = 750;
 
-            return GeneracionDeUnaValoracionPorEntidad.GenereLaValoracion(
-                listaDeISINEnColones,
-                listaDeISINEnDolares,
-                listaDeISINEnUDESAnotadosEnCuenta,
-                listaDeISINEnUDESNoAnotadosEnCuenta,
-                fechaActual,
-                tipoDeCambioDeUDESDeAyer,
-                tipoDeCambioDeUDESDeHoy);
+            return new ValoracionPorEntidad(
+                    listaDeISINEnColones,
+                    listaDeISINEnDolares,
+                    listaDeISINEnUDESAnotadosEnCuenta,
+                    listaDeISINEnUDESNoAnotadosEnCuenta,
+                    fechaActual,
+                    tipoDeCambioDeUDESDeAyer,
+                    tipoDeCambioDeUDESDeHoy).GenereLaValoracion();
         }
 
     }
