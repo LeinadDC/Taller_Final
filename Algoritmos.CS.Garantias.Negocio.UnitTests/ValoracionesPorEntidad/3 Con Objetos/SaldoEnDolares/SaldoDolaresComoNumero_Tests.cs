@@ -20,7 +20,6 @@ namespace ConObjetos.Tests
         public void SaldoEnDolares_ComoNumero_SinISIN()
         {
             elResultadoEsperado = 0;
-
             listaEnDolares = UnaListaSinValoraciones();
 
             elResultadoObtenido = new SaldoEnDolares(listaEnDolares).ComoNumero();
