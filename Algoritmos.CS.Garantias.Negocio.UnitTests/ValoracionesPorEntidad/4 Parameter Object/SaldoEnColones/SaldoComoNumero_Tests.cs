@@ -39,7 +39,7 @@ namespace ConParameterObject.Tests
 
             losDatos = new DatosSaldoColones();
 
-            losDatos.valoracionEnColones = UnaListaSinValoraciones();
+            losDatos.valoracionEnColones = UnaValoracionEnColones();
             losDatos.valoracionUDESEnCuenta = UnaListaSinValoraciones();
             losDatos.valoracionUDESNoAnotadosEnCuenta = UnaListaSinValoraciones();
             elResultadoObtenido = new SaldoEnColones(losDatos).ComoNumero();
