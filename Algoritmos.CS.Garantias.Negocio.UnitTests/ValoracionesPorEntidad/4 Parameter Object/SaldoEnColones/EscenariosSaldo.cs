@@ -9,7 +9,7 @@ using Algoritmos.CS.Garantias.Negocio.UnitTests.Valoraciones.ConPolimorfismo.Val
 
 namespace ConParameterObject.Tests
 {
-    public class EscenariosSaldo:EscenariosDeListasEnDolares
+    public class EscenariosSaldo:Escenarios
     {
         protected new List<ValoracionPorISIN> UnaListaSinValoraciones()
         {

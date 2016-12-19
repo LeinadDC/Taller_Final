@@ -42,6 +42,7 @@ namespace ConParameterObject.Tests
         protected ValoracionDeLosISINDeUnaEntidad UnaValoracionConUnISINEnDolares()
         {
             losDatos = new DatosDeLaValoracionPorEntidad();
+
             losDatos.listaDeISINEnColones = new List<ISIN>();
             losDatos.listaDeISINEnDolares = new List<ISIN>();
 
@@ -75,8 +76,9 @@ namespace ConParameterObject.Tests
 
         protected ValoracionDeLosISINDeUnaEntidad UnaValoracionConDosISINEnDolares()
         {
-            List<ISIN> listaDeISINEnColones = new List<ISIN>();
-            List<ISIN> listaDeISINEnDolares = new List<ISIN>();
+            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos.listaDeISINEnColones = new List<ISIN>();
+            losDatos.listaDeISINEnDolares = new List<ISIN>();
 
             ISIN unISINEnDolares = new ISIN();
             unISINEnDolares.NumeroISIN = "HDA000000000001";
@@ -85,7 +87,7 @@ namespace ConParameterObject.Tests
             unISINEnDolares.porcentajeCobertura = 0.8M;
             unISINEnDolares.precioLimpioDelVectorDePrecios = 80;
             unISINEnDolares.montoNominalDelSaldo = 1000;
-            listaDeISINEnDolares.Add(unISINEnDolares);
+            losDatos.listaDeISINEnDolares.Add(unISINEnDolares);
 
             ISIN otroISINEnDolares = new ISIN();
             otroISINEnDolares.NumeroISIN = "HDA000000000001";
@@ -94,7 +96,7 @@ namespace ConParameterObject.Tests
             otroISINEnDolares.porcentajeCobertura = 0.8M;
             otroISINEnDolares.precioLimpioDelVectorDePrecios = 80;
             otroISINEnDolares.montoNominalDelSaldo = 1000;
-            listaDeISINEnDolares.Add(otroISINEnDolares);
+            losDatos.listaDeISINEnDolares.Add(otroISINEnDolares);
 
             losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();

@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ConParameterObject.Tests
 {
     [TestClass]
-    public class SaldoDolaresComoNumero_Tests : EscenariosSaldo
+    public class SaldoDolaresComoNumero_Tests : EscenariosDeListasEnDolares
     {
         private decimal elResultadoEsperado;
         private decimal elResultadoObtenido;

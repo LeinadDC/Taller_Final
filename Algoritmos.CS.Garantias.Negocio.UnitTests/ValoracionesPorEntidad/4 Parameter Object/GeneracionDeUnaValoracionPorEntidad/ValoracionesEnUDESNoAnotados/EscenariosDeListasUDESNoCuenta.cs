@@ -9,6 +9,7 @@ namespace ConParameterObject.Tests
     public class EscenariosListasUDESNoCuenta : Escenarios
     {
         DatosDeLaValoracionPorEntidad losDatos;
+
         protected List<ValoracionPorISIN> UnaListaSinValoraciones()
         {
             return new List<ValoracionPorISIN>();
@@ -40,6 +41,8 @@ namespace ConParameterObject.Tests
 
         protected ValoracionDeLosISINDeUnaEntidad UnaValoracionConUnISINEnUDESNoAnotadosEnCuenta()
         {
+            losDatos = new DatosDeLaValoracionPorEntidad();
+
             losDatos.listaDeISINEnColones = new List<ISIN>();
             losDatos.listaDeISINEnDolares = new List<ISIN>();
             losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
@@ -73,6 +76,7 @@ namespace ConParameterObject.Tests
 
         protected ValoracionDeLosISINDeUnaEntidad UnaValoracionConDosISINEnUDESNoAnotadosEnCuenta ()
         {
+            losDatos = new DatosDeLaValoracionPorEntidad();
 
             losDatos.listaDeISINEnColones = new List<ISIN>();
             losDatos.listaDeISINEnDolares = new List<ISIN>();

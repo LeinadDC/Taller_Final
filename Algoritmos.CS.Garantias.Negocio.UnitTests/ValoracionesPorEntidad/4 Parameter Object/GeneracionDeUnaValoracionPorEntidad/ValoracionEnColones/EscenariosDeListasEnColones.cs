@@ -43,6 +43,7 @@ namespace ConParameterObject.Tests
             losDatos = new DatosDeLaValoracionPorEntidad();
 
             losDatos.listaDeISINEnColones = new List<ISIN>();
+            losDatos.listaDeISINEnDolares = new List<ISIN>();
 
             ISIN unISINEnDolares = new ISIN();
             unISINEnDolares.NumeroISIN = "HDA000000000001";
@@ -77,6 +78,7 @@ namespace ConParameterObject.Tests
             losDatos = new DatosDeLaValoracionPorEntidad();
 
             losDatos.listaDeISINEnColones = new List<ISIN>();
+            losDatos.listaDeISINEnDolares = new List<ISIN>();
 
             ISIN unISINEnDolares = new ISIN();
             unISINEnDolares.NumeroISIN = "HDA000000000001";
@@ -96,8 +98,8 @@ namespace ConParameterObject.Tests
             otroISINEnDolares.montoNominalDelSaldo = 3578000;
             losDatos.listaDeISINEnColones.Add(otroISINEnDolares);
 
-            List<ISIN> listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
-            List<ISIN> listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();
+            losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
+            losDatos.listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();
             losDatos.fechaActual = new DateTime(2016, 1, 1);
             losDatos.tipoDeCambioDeUDESDeAyer = 745;
             losDatos.tipoDeCambioDeUDESDeHoy = 750;

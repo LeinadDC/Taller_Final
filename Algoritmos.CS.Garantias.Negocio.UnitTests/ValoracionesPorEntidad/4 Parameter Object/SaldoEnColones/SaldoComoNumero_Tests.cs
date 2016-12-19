@@ -24,7 +24,6 @@ namespace ConParameterObject.Tests
             elResultadoEsperado = 0;
 
             losDatos = new DatosSaldoColones();
-
             losDatos.valoracionEnColones = UnaListaSinValoraciones();
             losDatos.valoracionUDESEnCuenta = UnaListaSinValoraciones();
             losDatos.valoracionUDESNoAnotadosEnCuenta = UnaListaSinValoraciones();

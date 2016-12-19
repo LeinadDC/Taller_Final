@@ -30,12 +30,12 @@ namespace ConParameterObject
 
             List<ValoracionPorISIN> valoracionISINAnotadoCuenta = new ValoracionISINAnotadoEnCuenta(losDatos).ComoLista();
             laValoracion.ValoracionesDeLosISINEnUDESAnotadosEnCuenta = valoracionISINAnotadoCuenta;
-            datosSaldoEnColones.valoracionEnColones = valoracionEnColones;
+            datosSaldoEnColones.valoracionUDESEnCuenta = valoracionISINAnotadoCuenta;
 
 
             List<ValoracionPorISIN> valoracionISINNoAnotadoCuenta = new ValoracionISINNoAnotadoEnCuenta(losDatos).ComoLista();
             laValoracion.ValoracionesDeLosISINEnUDESNoAnotadosEnCuenta = valoracionISINNoAnotadoCuenta;
-            datosSaldoEnColones.valoracionEnColones = valoracionEnColones;
+            datosSaldoEnColones.valoracionUDESNoAnotadosEnCuenta = valoracionISINNoAnotadoCuenta;
 
             decimal saldoEnColones = new SaldoEnColones(datosSaldoEnColones).ComoNumero();
             laValoracion.SaldoEnColones = saldoEnColones;
