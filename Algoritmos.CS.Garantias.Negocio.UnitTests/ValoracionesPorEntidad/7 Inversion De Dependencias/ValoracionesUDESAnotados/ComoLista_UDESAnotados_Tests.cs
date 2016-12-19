@@ -1,11 +1,12 @@
-﻿using ConParameterObject;
+﻿using ConInversionDeDependencias;
 using Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo;
 using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Mapeable.ComparacionesParaPruebasUnitarias;
+using NSubstitute;
 
-namespace ConParameterObject.Tests
+namespace ConInversionDeDependencias.Tests
 {
     [TestClass]
     public class ComoLista_UDESAnotados_Tests : EscenariosListasUDESEnCuenta
@@ -19,11 +20,11 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = UnaListaSinValoraciones();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
-            losDatos.tipoDeCambioDeUDESDeAyer = 745;
-            losDatos.tipoDeCambioDeUDESDeHoy = 750;
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
+            losDatos.tipoDeCambioDeUDESDeAyer.Returns(745);
+            losDatos.tipoDeCambioDeUDESDeHoy.Returns(750);
             elResultadoObtenido = new ValoracionISINAnotadoEnCuenta(losDatos).ComoLista();
 
             Verificacion.LasListasSonIguales(elResultadoEsperado, elResultadoObtenido);
@@ -34,7 +35,7 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = UnaValoracionEnUDESAnotadosEnCuenta();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
             ISIN unISINEnUDESAnotadosEnCuenta = new ISIN();
             unISINEnUDESAnotadosEnCuenta.NumeroISIN = "HDA000000000001";
@@ -44,9 +45,9 @@ namespace ConParameterObject.Tests
             unISINEnUDESAnotadosEnCuenta.precioLimpioDelVectorDePrecios = 80;
             unISINEnUDESAnotadosEnCuenta.montoNominalDelSaldo = 1000;
             losDatos.listaDeISINEnUDESAnotadosEnCuenta.Add(unISINEnUDESAnotadosEnCuenta);
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
-            losDatos.tipoDeCambioDeUDESDeAyer = 745;
-            losDatos.tipoDeCambioDeUDESDeHoy = 750;
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
+            losDatos.tipoDeCambioDeUDESDeAyer.Returns(745);
+            losDatos.tipoDeCambioDeUDESDeHoy.Returns(750);
 
             elResultadoObtenido = new ValoracionISINAnotadoEnCuenta(losDatos).ComoLista();
 
@@ -58,7 +59,7 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = DosValoracionesEnUDESAnotadosEnCuenta();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESAnotadosEnCuenta = new List<ISIN>();
             ISIN unISINEnUDESAnotadosEnCuenta = new ISIN();
             unISINEnUDESAnotadosEnCuenta.NumeroISIN = "HDA000000000001";
@@ -78,9 +79,9 @@ namespace ConParameterObject.Tests
             otroISINEnUDESAnotadosEnCuenta.montoNominalDelSaldo = 1000;
             losDatos.listaDeISINEnUDESAnotadosEnCuenta.Add(otroISINEnUDESAnotadosEnCuenta);
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
-            losDatos.tipoDeCambioDeUDESDeAyer = 745;
-            losDatos.tipoDeCambioDeUDESDeHoy = 750;
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
+            losDatos.tipoDeCambioDeUDESDeAyer.Returns(745);
+            losDatos.tipoDeCambioDeUDESDeHoy.Returns(750);
 
 
             elResultadoObtenido = new ValoracionISINAnotadoEnCuenta(losDatos).ComoLista();

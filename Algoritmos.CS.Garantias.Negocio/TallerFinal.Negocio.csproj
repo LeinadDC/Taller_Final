@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NSubstitute, Version=1.10.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSubstitute.1.10.0.0\lib\net45\NSubstitute.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ISIN.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\Parameter Object\DatosDeLaValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\Parameter Object\DatosSaldoColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\Parameter Object\DatosSaldoDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\SaldoEnColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\SaldoEnDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionISINAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionISINColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionISINDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionISINNoAnotadoEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionPorEntidad.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoraciónDeLosISINDeUnaEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\ISIN.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\Parameter Object\DatosDeLaValoracionPorEntidad.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Con Parameter Object\Parameter Object\DatosSaldoColones.cs" />
@@ -80,6 +96,8 @@
     <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\ValoraciónDeLosISINDeUnaEntidad.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ValoracionesPorEntidad\7 Inversion De Dependencias\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\4 Con Parameter Object\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\3 Con Objetos\Modelo de analisis.cd" />
     <None Include="ValoracionesPorEntidad\2 Con Funciones\Modelo de analisis.cd" />

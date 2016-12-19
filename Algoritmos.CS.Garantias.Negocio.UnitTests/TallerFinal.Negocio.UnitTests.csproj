@@ -39,6 +39,10 @@
       <HintPath>..\packages\Mapeable.ComparacionesParaPruebasUnitarias.1.0.0.1\lib\net40\Mapeable.ComparacionesParaPruebasUnitarias.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="NSubstitute, Version=1.10.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSubstitute.1.10.0.0\lib\net45\NSubstitute.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -69,6 +73,25 @@
     <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\EscenariosDeListasUDESEnCuenta.cs" />
     <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\SaldoDeUDESAnotados_Tests.cs" />
     <Compile Include="ValoracionesPorEntidad\1 Como un procedimiento\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\ValoracionesEnUDESAnotadosEnCuenta_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\EscenariosDeListasEnColones.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\SaldoEnColones_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\ValoracionesDeLosISINEnColones_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnDolares\EscenariosDeListasEnDolares.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnDolares\SaldoEnDolares_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionEnDolares\ValoracionesDeLosISINEnDolares_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\EscenariosDeListasUDESEnCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\SaldoDeUDESAnotados_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESAnotados\ValoracionesEnUDESAnotadosEnCuenta_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESNoAnotados\EscenariosDeListasUDESNoCuenta.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESNoAnotados\SaldoDeUDESNoAnotados_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\GeneracionDeUnaValoracionPorEntidad\ValoracionesEnUDESNoAnotados\ValoracionesEnUDESNoAnotadosEnCuenta_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\SaldoEnColones\EscenariosSaldo.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\SaldoEnColones\SaldoComoNumero_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\SaldoEnDolares\SaldoDolaresComoNumero_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionesDolares\ComoLista_Dolares_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionesUDESAnotados\ComoLista_UDESAnotados_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValoracionUDESNoAnotados\ComoLista_NoAnotado_Tests.cs" />
+    <Compile Include="ValoracionesPorEntidad\7 Inversion De Dependencias\ValorcionesColones\ComoLista_Colones_Tests.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Parameter Object\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\EscenariosDeListasEnColones.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Parameter Object\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\SaldoEnColones_Tests.cs" />
     <Compile Include="ValoracionesPorEntidad\4 Parameter Object\GeneracionDeUnaValoracionPorEntidad\ValoracionEnColones\ValoracionesDeLosISINEnColones_Tests.cs" />

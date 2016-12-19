@@ -1,11 +1,12 @@
-﻿using ConParameterObject;
+﻿using ConInversionDeDependencias;
 using Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo;
 using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Mapeable.ComparacionesParaPruebasUnitarias;
+using NSubstitute;
 
-namespace ConParameterObject.Tests
+namespace ConInversionDeDependencias.Tests
 {
     [TestClass]
     public class ComoLista_NoAnotado_Tests : EscenariosListasUDESNoCuenta
@@ -20,9 +21,9 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = UnaListaSinValoraciones();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta= new List<ISIN>();
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
 
             elResultadoObtenido = new ValoracionISINNoAnotadoEnCuenta(losDatos).ComoLista();
 
@@ -35,7 +36,7 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = UnaValoracionEnUDESNoAnotadosEnCuenta();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();
 
             ISIN unISINEnUDESNoAnotadosEnCuenta = new ISIN();
@@ -46,7 +47,7 @@ namespace ConParameterObject.Tests
             unISINEnUDESNoAnotadosEnCuenta.precioLimpioDelVectorDePrecios = 80;
             unISINEnUDESNoAnotadosEnCuenta.montoNominalDelSaldo = 1000;
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta.Add(unISINEnUDESNoAnotadosEnCuenta);
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
             elResultadoObtenido = new ValoracionISINNoAnotadoEnCuenta(losDatos).ComoLista();
 
             Verificacion.LasListasSonIguales(elResultadoEsperado, elResultadoObtenido);
@@ -57,7 +58,7 @@ namespace ConParameterObject.Tests
         {
             elResultadoEsperado = DosValoracionesEnUDESNoAnotadosEnCuenta();
 
-            losDatos = new DatosDeLaValoracionPorEntidad();
+            losDatos = Substitute.For<DatosDeLaValoracionPorEntidad>();
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta = new List<ISIN>();
 
             ISIN unISINEnUDESNoAnotadosEnCuenta = new ISIN();
@@ -78,7 +79,7 @@ namespace ConParameterObject.Tests
             otroISINEnUDESNoAnotadosEnCuenta.montoNominalDelSaldo = 1000;
             losDatos.listaDeISINEnUDESNoAnotadosEnCuenta.Add(otroISINEnUDESNoAnotadosEnCuenta);
 
-            losDatos.fechaActual = new DateTime(2016, 1, 1);
+            losDatos.fechaActual.Returns(new DateTime(2016, 1, 1));
             elResultadoObtenido = new ValoracionISINNoAnotadoEnCuenta(losDatos).ComoLista();
 
             Verificacion.LasListasSonIguales(elResultadoEsperado, elResultadoObtenido);

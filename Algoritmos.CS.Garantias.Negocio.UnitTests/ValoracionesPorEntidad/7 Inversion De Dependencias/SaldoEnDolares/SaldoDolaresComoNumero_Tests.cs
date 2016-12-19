@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Algoritmos.CS.Garantias.Negocio.ValoracionesPorISIN.ConPolimorfismo;
-using ConParameterObject;
+using ConInversionDeDependencias;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ConParameterObject.Tests
+namespace ConInversionDeDependencias.Tests
 {
     [TestClass]
     public class SaldoDolaresComoNumero_Tests : EscenariosDeListasEnDolares
